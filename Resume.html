@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingouda Patil - Resume</title>
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Existing styles from question + modifications */
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f2f5;
+        }
+
+        .resume-container {
+            padding: 4rem 5%;
+            background: white;
+            max-width: 1200px;
+            margin: 2rem auto;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .resume-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .resume-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-item, .education-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: var(--light);
+            border-radius: 8px;
+        }
+
+        .certification-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .certification-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+		
+		
+		
+		:root {
+    --primary: #2A2D43;
+    --secondary: #4ECDC4;
+    --accent: #FF6B6B;
+    --dark: #1A1D2B;
+    --light: #F8F9FA;
+    --gradient: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+    color: var(--primary);
+    background-color: var(--light);
+}
+		
+		
+/* Enhanced Header Styles */
+header {
+    padding: 1rem 5%;
+    background: var(--gradient);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--light);
+    letter-spacing: -0.5px;
+    background: linear-gradient(45deg, var(--secondary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav .topbar {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav .topbar li a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+nav .topbar li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: all 0.3s ease;
+}
+
+nav .topbar li a:hover {
+    color: var(--secondary);
+}
+
+nav .topbar li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+nav .topbar li a.active {
+    color: var(--secondary);
+}
+
+nav .topbar li a.active::before {
+    width: 100%;
+    left: 0;
+}
+
+
+    </style>
+</head>
+<body>
+  <header id="home">
+        <h1>Lingouda Patil</h1>
+        <p>Full Stack Developer</p>
+        <nav>
+            <ul class="topbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Resume.html"  class="active">Resume</a></li>
+                <li><a href="Cert.html">Certificates</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="resume-container">
+        <div class="resume-header">
+            <h1>Lingouda Patil</h1>
+            <p>Full Stack Developer</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Belagavi, Karnataka</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:lingoudap@gmail.com">lingoudap@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+917026589882">+91 7026589882</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/lingouda-patil-267134212" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/lingoudappatil" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <section class="resume-section">
+            <h2 class="section-title">Summary</h2>
+            <p>Enthusiastic Graduate with a degree in Computer Science and a passion for software development. Proficient in Programming Languages with a strong foundation in algorithm design. Eager to contribute to a dynamic team and apply problem-solving skills in a collaborative environment.</p>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <h3>Full Stack Developer Intern - Rachana Infotech Software Pvt.Ltd</h3>
+                <ul>
+                    <li>Created responsive Admin Panel for web applications</li>
+                    <li>Integrated frontend design and improved system functionality</li>
+                    <li>Demonstrated strong problem-solving skills in web development</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>MCA - KLE M S Sheshgiri Engineering College (2023)</h3>
+                <h3>BCA - S J P N Trusts BCA College (2021)</h3>
+                <h3>PUC(Science) - SBM PU College (2018)</h3>
+                <h3>SSLC - N C High School (2016)</h3>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-item">
+                <h3>Sale Management Admin Panel</h3>
+                <ul>
+                    <li>Built with PHP and MySQL</li>
+                    <li>Implemented data visualization with Chart.js</li>
+                    <li><a href="#">View Project</a></li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Chat Application</h3>
+                <ul>
+                    <li>Real-time communication using Socket.io</li>
+                    <li>Node.js backend with HTML/CSS frontend</li>
+                    <li><a href="#">View Project</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="download-section">
+            <a href="Patil Lingouda_Resume.pdf" download class="download-btn">
+                <i class="fas fa-download"></i> Download PDF Resume
+            </a>
+        </div>
+    </main>
+</body>
+</html>
